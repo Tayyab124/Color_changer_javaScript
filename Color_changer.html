@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background changer</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        p{
+            font-size:18px ;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid gray 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+
+        }
+        #aqua{
+            background-color: aqua;
+
+        }
+        #violate{
+            background-color:violet;
+
+        }
+        #black{
+            background-color: black;
+        }
+        #color-swtcher{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-swtcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')" ></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violate" onclick="changeBG('#ce9aff')" ></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text"> About Us </h1>
+    <img src="tour.jpg" alt="travel Picture">
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium? Suscipit, exercitationem atque dolores consequuntur iure ipsa? Incidunt maxime quae nulla, deleniti qui, sequi atque tenetur accusantium aspernatur vitae cupiditate.
+    </p>
+    <!-- <div style="text-align: center; font-weight:bold; font-size:xx-large;text-decoration:none;">
+        <a href="./Temprature_converter.html.html">Temprature Converetr Project</a>
+    </div> -->
+
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if(color == "#000000"){
+                for (let elm of txt){
+                    elm.style.color = "white";
+                }
+            }else{
+                for (let elm of txt){
+                    elm.style.color = "black";
+                }
+
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
